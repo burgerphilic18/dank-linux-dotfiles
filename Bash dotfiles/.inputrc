@@ -1,0 +1,14 @@
+# 1. Pressing Tab cycles through options immediately
+TAB: menu-complete
+
+# 2. Pressing Shift+Tab cycles BACKWARDS (very useful)
+"\e[Z": menu-complete-backward
+
+# 3. Show the list of options immediately if there are many
+set show-all-if-ambiguous on
+
+# 4. Make it case-insensitive (so 'cd D' finds 'Documents')
+set completion-ignore-case on
+
+# 5. Colorize the file types in the suggestion list
+set colored-stats on
